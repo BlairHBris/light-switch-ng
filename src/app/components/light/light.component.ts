@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-light',
@@ -7,15 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightComponent implements OnInit {
 
-  lightStatus: boolean = false
+  @Input() lightStatus!: boolean
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  toggleLight(){
-    this.lightStatus = !this.lightStatus
-  }
-
 }
