@@ -7,3 +7,6 @@ Create an Angular app that has the following:
 * A component called `Switch` that toggles that state
 
 The `NightLight` component should render the `Light` and `Switch` components. Style the app and deploy it.
+
+blair-light-switch.netlify.app
+
