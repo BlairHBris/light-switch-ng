@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightComponent implements OnInit {
 
+  lightStatus: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleLight(){
+    this.lightStatus = !this.lightStatus
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-switch',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitchComponent implements OnInit {
 
+  @Output() switchThrow = new EventEmitter()
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.switchThrow.emit()
   }
 
 }
